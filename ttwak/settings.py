@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ttwakuser.apps.TtwakuserConfig',
+    'core.apps.CoreConfig',
 ]
 
 MIDDLEWARE = [
