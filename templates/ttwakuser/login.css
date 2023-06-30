@@ -4,6 +4,27 @@ body {
   font-family: main-font;
 }
 
+.bg_img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  /* max-width: 500px; */
+  z-index: -2;
+}
+
+.bg_gray {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #d6d8e2;
+  top: 0;
+  left: 0;
+  opacity: 0.56;
+  z-index: -1;
+}
+
 .title-container {
   text-align: center;
   margin-top: 250px;
@@ -14,5 +35,43 @@ body {
   margin-bottom: 20px;
 }
 .text-signin {
+  font-size: 3.5rem;
+}
+
+.form-container {
+  margin: 0 auto;
+  margin-top: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.post-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+.input-box {
+  border: hidden;
+  font-size: 3rem;
+  border-radius: 30px;
+  padding: 30px;
+  width: 70%;
+  max-width: 1200px;
+  font-family: main-font;
+  box-shadow: 2px 2px 5px #bbbbbb;
+}
+
+.btn-submit {
+  width: 500px;
+}
+
+.lable-btn-submit {
+  position: relative;
+  top: 135px;
+  margin: 0;
   font-size: 3rem;
 }

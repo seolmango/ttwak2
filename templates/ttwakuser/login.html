@@ -4,23 +4,33 @@
     <meta charset="UTF-8" />
     <title>TTWAK-login</title>
     <link rel="stylesheet" href="../reset.css" />
+    <style>
+      @font-face {
+        font-family: 'main-font';
+        src: url('../fonts/Cafe24Simplehae-v2.0.ttf') format('truetype');
+        font-weight: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
+    <div class="background">
+      <img class="bg_img" src="images/color_board.png" alt="bg_img" />
+      <div class="bg_gray"></div>
+    </div>
     <div class="title-container">
-      <div class="title"></div>
-      <div class="signin"></div>
+      <!-- <div class="title"></div> -->
+      <img src="images/main_logo_big.png" alt="logo" class="main-logo" />
+      <!-- <div class="signin"></div> -->
+      <p class="text-signin">Login</p>
     </div>
     <div class="form-container">
       <form method="post" class="post-form" action="{% url 'ttwak:login' %}">
-        <div class="name-group">
-          <label for="email">이메일 입력</label>
-          <input type="email" class="email-input" name="email" value="" />
-        </div>
-        <div class="password-group">
-          <label for="password">비밀번호 입력</label>
-          <input type="password" class="password-input" name="password" />
-        </div>
-        <button type="submit" class="submit-btn"></button>
+        <input type="email" class="email-input input-box" name="email" value="" placeholder="email" required />
+        <input type="password" class="password-input input-box" name="password" placeholder="password" required />
+        <!-- <button type="submit" class="btn-submit"></button> -->
+        <p class="lable-btn-submit">Login</p>
+        <input type="image" src="images/btn_color.png" alt="btn_login" class="btn-submit" />
       </form>
     </div>
   </body>
